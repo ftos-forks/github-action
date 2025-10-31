@@ -18,7 +18,7 @@ jobs:
           # https://github.com/cypress-io/github-action/blob/master/action.yml
           # Node.js minor version is aligned to
           # https://github.com/actions/runner/blob/main/src/Misc/externals.sh
-          node-version: 20.19.4
+          node-version: 20.19.5
       - run: npm ci
       # Core action code
       - run: npm run format # Prettier formats core action code
@@ -41,7 +41,7 @@ jobs:
       - run: npm ci
       # https://github.com/cycjimmy/semantic-release-action
       - name: Semantic Release
-        uses: cycjimmy/semantic-release-action@v4
+        uses: cycjimmy/semantic-release-action@v5
         id: semantic
         with:
           # https://github.com/semantic-release/semantic-release
